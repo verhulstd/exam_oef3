@@ -42,8 +42,7 @@ Schilder.prototype.getTotalWidth = function () {
 };
 
 Schilder.prototype.getList = function () {
-  let output = ``;
-  output += `${this.voornaam} ${this.achternaam} / ${this.stijl}`;
+  let output = `${this.voornaam} ${this.achternaam} / ${this.stijl}`;
   output += this.lijst
     .map(function (schilderijObj) {
       return schilderijObj.printUit();
